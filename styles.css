@@ -15,8 +15,8 @@ body {
 }
 
 .envelope {
-  width: 300px; /* Bigger envelope */
-  height: 180px; /* Bigger envelope */
+  width: 400px; /* Much bigger envelope */
+  height: 240px; /* Much bigger envelope */
   background-color: #f44336; /* Red envelope */
   position: relative;
   border-radius: 10px;
@@ -25,8 +25,8 @@ body {
 }
 
 .heart {
-  width: 100px; /* Bigger heart */
-  height: 100px; /* Bigger heart */
+  width: 140px; /* Bigger heart */
+  height: 140px; /* Bigger heart */
   background-color: white;
   position: absolute;
   top: 50%;
@@ -37,39 +37,43 @@ body {
 .heart::before,
 .heart::after {
   content: '';
-  width: 100px; /* Bigger heart */
-  height: 100px; /* Bigger heart */
+  width: 140px; /* Bigger heart */
+  height: 140px; /* Bigger heart */
   background-color: white;
   border-radius: 50%;
   position: absolute;
 }
 
 .heart::before {
-  top: -50px; /* Adjust for perfect heart shape */
+  top: -70px; /* Adjust for perfect heart shape */
   left: 0;
 }
 
 .heart::after {
   top: 0;
-  left: -50px; /* Adjust for perfect heart shape */
+  left: -70px; /* Adjust for perfect heart shape */
 }
 
 .pictures {
   display: none;
   margin-top: 20px;
+  display: grid; /* Use grid layout for pictures */
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between items */
 }
 
 .picture-item {
   display: flex;
+  flex-direction: column; /* Stack image and text vertically */
   align-items: center;
-  margin: 20px 0;
+  text-align: center;
 }
 
 .picture-item img {
   width: 150px; /* Larger pictures */
   height: 150px; /* Larger pictures */
   border-radius: 10px;
-  margin-right: 20px;
+  margin-bottom: 10px; /* Space between image and text */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
