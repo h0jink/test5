@@ -5,8 +5,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #ffcc99; /* Tan/peachy background */
-  font-family: 'Arial', sans-serif;
+  background-color: #fff0f5; /* Very pale pink background */
+  font-family: 'Indie Flower', cursive; /* Cute, handwritten font */
   cursor: pointer; /* Indicate the page is clickable */
 }
 
@@ -21,6 +21,7 @@ body {
   position: relative;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease; /* Smooth fade-out effect */
 }
 
 .heart {
@@ -61,17 +62,19 @@ body {
 .picture-item {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .picture-item img {
-  width: 100px;
-  height: 100px;
+  width: 150px; /* Larger pictures */
+  height: 150px; /* Larger pictures */
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .picture-item p {
-  font-size: 18px;
+  font-size: 24px; /* Larger font */
   color: #d32f2f; /* Red text for Valentine's theme */
+  margin: 0;
 }
